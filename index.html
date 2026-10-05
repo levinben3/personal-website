@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name — Portfolio</title>
+<title>Benjamin Levin — Portfolio</title>
 
 <!-- ============================================================
      FONTS  (loaded from Google Fonts)
@@ -56,7 +56,7 @@ section{padding:8px 0 56px}
 
 /* bullets */
 ul.card-desc{list-style:none;margin-top:7px;display:flex;flex-direction:column;gap:5px}
-ul.card-desc li{position:relative;padding-left:14px}
+ul.card-desc li{position:relative;padding-left:14px;font:400 13px/1.55 var(--sans);color:var(--soft)}
 ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accent)}
 
 /* ---------- sidebar ---------- */
@@ -147,7 +147,7 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
 /* ---------- projects ---------- */
 .proj-hd{display:flex;justify-content:space-between;align-items:baseline}
 .proj-hint{font:400 11px var(--mono);color:var(--faint)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;align-items:start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.18s}
 .card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 10px 26px rgba(37,99,235,.12)}
 .card-img{width:100%;height:158px;display:block;object-fit:cover;background:var(--chip);
@@ -159,9 +159,9 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
 .card-title{font:600 16px var(--sans);margin-top:6px}
 .card-desc{font:400 13px/1.55 var(--sans);color:var(--soft);margin-top:7px}
 .card-tags{display:flex;gap:6px;margin-top:11px;flex-wrap:wrap}
-.card-links{display:flex;gap:16px;margin-top:13px;padding-top:12px;border-top:1px solid rgba(24,34,44,.08)}
-.card-links a{text-decoration:none;font:500 11px var(--mono)}
-.card-links a:hover{color:var(--accent)}
+.card-links{display:flex;gap:16px;margin-top:13px;padding-top:12px;border-top:1px solid rgba(24,34,44,.08);flex-wrap:wrap}
+.card-links a{text-decoration:none;font:500 11px var(--mono);color:var(--accent)}
+.card-links a:hover{color:var(--ink)}
 
 /* ---------- research ---------- */
 .pub{display:flex;gap:20px;padding:18px 0;border-top:1px solid var(--line);align-items:baseline}
@@ -232,7 +232,7 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
       <a href="https://github.com/levinben3">↗ GitHub</a>
       <a href="https://www.linkedin.com/in/benjamin-levin-591516325/">↗ LinkedIn</a>
       <a href="https://orcid.org/0009-0008-1132-7494">↗ ORCID</a>
-      <a href="bsl2134@columbia.edu">↗ bsl2134@columbia.edu</a>
+      <a href="mailto:bsl2134@columbia.edu">↗ bsl2134@columbia.edu</a>
       <div class="status">
         <span class="dot"></span>
         <span>Open to Summer '27 roles</span>
@@ -281,26 +281,23 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
         <div class="sec-title">A short version</div>
         <div class="two-col">
           <div class="col-text">
-            <p>Hi, I am an undergraduate student at Columbia University in the City of New York. As a physics major, I am both passionate about using my physics backround toward applied software engineering projects, including controls, firmware, hardware 
-              development, simulation, data analysis, and the most cutting-edge projects in different disciplines, such as high energy astrophysics.</p>
-            <p>Currently, I am working on the complete low voltage system for the Formual SAE electric vehicle I work on, bringing together all low voltage 
-              electronics, data acqusition, wiring harness, and all software components of the car. I am working on developing robust embedded real-time operating systems to handle battery management systems and sensor management. 
-              I am also extending our understanding of batteries through advanced higher order modeling, incorporating thermal analysis and developing vehicle-dynamics-based control and state estimation.</p>
-            <p>On the side, I am an avid classical double bass player and amateur conductor in a wide variety of school and student-led ensembles. I also am a frequent cook, preparing elaborate dinners and creative dishes for my friends.</p>
+            <p>Hi, I am an undergraduate student at Columbia University in the City of New York. As a physics major, I am passionate about using my physics background toward applied software engineering projects, including controls, firmware, hardware development, simulation, and data analysis, as well as cutting-edge work in other disciplines such as high-energy astrophysics.</p>
+            <p>Currently, I am working on the complete low-voltage system for the Formula SAE electric vehicle I work on, bringing together all low-voltage electronics, data acquisition, the wiring harness, and all software components of the car. I am developing robust embedded real-time operating systems to handle battery management and sensor management, and extending our understanding of batteries through higher-order modeling, incorporating thermal analysis and developing vehicle-dynamics-based control and state estimation.</p>
+            <p>On the side, I am an avid classical double bass player and amateur conductor in a wide variety of school and student-led ensembles. I am also a frequent cook, preparing elaborate dinners and creative dishes for my friends.</p>
           </div>
           <div class="toolbox">
             <div class="toolbox-h">TOOLBOX</div>
             <div class="tool-group">
               <div class="tool-group-h">Languages</div>
-              <div class="tags"><span class="tag">MATLAB</span><span class="tag">C / C++</span><span class="tag">Python</span><span class="tag">+ add</span></div>
+              <div class="tags"><span class="tag">MATLAB</span><span class="tag">C / C++</span><span class="tag">Python</span></div>
             </div>
             <div class="tool-group">
               <div class="tool-group-h">Tools &amp; Frameworks</div>
-              <div class="tags"><span class="tag">Simulink</span><span class="tag">Embedded RTOS</span><span class="tag">Git</span><span class="tag">+ add</span></div>
+              <div class="tags"><span class="tag">Simulink</span><span class="tag">Embedded RTOS</span><span class="tag">Git</span></div>
             </div>
             <div class="tool-group">
               <div class="tool-group-h">Domains</div>
-              <div class="tags"><span class="tag">State estimation</span><span class="tag">Kalman filtering</span><span class="tag">Simulation</span></div>
+              <div class="tags"><span class="tag">Control Theory</span><span class="tag">State estimation</span><span class="tag">Kalman filtering</span><span class="tag">Simulation</span><span class="tag">Vehicle Dynamics</span><span class="tag">Statistical Analysis</span></div>
             </div>
           </div>
         </div>
@@ -315,11 +312,11 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
           <div class="exp">
             <div class="exp-when">May 2026<br>— August 2026</div>
             <div class="exp-body">
-              <div class="exp-role">Softare Engineering Intern - Systems Architecture</div>
+              <div class="exp-role">Software Engineering Intern — Systems Architecture</div>
               <div class="exp-org">Rivian · VW Group Technologies</div>
               <ul>
-                <li>Developed complete end-to-end testing infrastructure for vehicle-level analysis of driver assist systems and interactions with the core vehicle</li>
-                <li>Created novel solutions for vehicle dynamic plant models to build out extensive software-in-the-loop analysis</li>
+                <li>Developed complete end-to-end testing infrastructure for vehicle-level analysis of driver-assist systems and their interactions with the core vehicle</li>
+                <li>Created novel solutions for vehicle-dynamics plant models to build out extensive software-in-the-loop analysis</li>
               </ul>
               <div class="pills"><span class="pill">Controls</span><span class="pill">Systems Architecture</span><span class="pill">Modeling</span></div>
             </div>
@@ -331,27 +328,24 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
               <div class="exp-role">Software Lead &amp; Low-Voltage Chief</div>
               <div class="exp-org">Formula SAE Electric Team</div>
               <ul>
-                <li>Designed and led all control systems on-vehicle, including torque control, traction control, brake systems, vehicle states, and fault circuits</li>
-                <li> Developed core vehicle modeling such as empirical brush tires, motor, drivetrain, and batteries and let vital point mass, two track, inverter
-controller, and other simulations to inform vehicle code design, parameter studies, broader simulations, and physical design changes</li>
-                <li>Created and managed high voltage battery and charging firmware along with embedded vehicle systems including CAN and RS232
-communications, data storage and efficiency, and integration with all high and low voltage electrical systems</li>
-                <li>Designed and Architected complete low voltage system including wiring harness, all electronics, micro controllers, driver interfaces, data acqusition, torque control, and safety critical systems</li>
+                <li>Designed and led all on-vehicle control systems, including torque control, traction control, brake systems, vehicle states, and fault circuits</li>
+                <li>Developed core vehicle modeling (empirical brush tires, motor, drivetrain, and batteries) and led point-mass, two-track, inverter-controller, and other simulations to inform vehicle code design, parameter studies, and physical design changes</li>
+                <li>Created and managed high-voltage battery and charging firmware along with embedded vehicle systems including CAN and RS232 communications, data storage, and integration with all high- and low-voltage electrical systems</li>
+                <li>Designed and architected the complete low-voltage system including wiring harness, electronics, microcontrollers, driver interfaces, data acquisition, torque control, and safety-critical systems</li>
               </ul>
               <div class="pills"><span class="pill">Embedded Systems</span><span class="pill">Control Systems</span><span class="pill">PCB Design</span><span class="pill">Systems Engineering</span><span class="pill">Project Management</span></div>
             </div>
           </div>
 
-          <div style="margin-top:22px">
           <div class="exp">
-            <div class="exp-when">April 2026<br>— Present</div>
+            <div class="exp-when">April 2026<br>— present</div>
             <div class="exp-body">
               <div class="exp-role">MATLAB Student Ambassador</div>
-              <div class="exp-org">Mathworks</div>
+              <div class="exp-org">MathWorks</div>
               <ul>
-                <li> Holds MATLAB learning events, promotes Mathworks to student clubs, communicates with professors to answer Mathworks questions</li>
+                <li>Holds MATLAB learning events, promotes MathWorks to student clubs, and communicates with professors to answer MathWorks questions</li>
               </ul>
-              <div class="pills"><span class="pill">Controls</span><span class="pill">Systems Architecture</span><span class="pill">Modeling</span></div>
+              <div class="pills"><span class="pill">MATLAB</span><span class="pill">Outreach</span><span class="pill">Teaching</span></div>
             </div>
           </div>
 
@@ -359,11 +353,11 @@ communications, data storage and efficiency, and integration with all high and l
             <div class="exp-when">December 2024<br>— present</div>
             <div class="exp-body">
               <div class="exp-role">Undergraduate Researcher</div>
-              <div class="exp-org">Columbia High Energy Astrophysics Lab</div>
+              <div class="exp-org">Columbia High-Energy Astrophysics Lab</div>
               <ul>
-                <li>Analyzed function of wavelets and voronoi tessellation algorithms to use in galactic center point source localization of unstudied Chandra data</li>
-                <li>Conducted spectral analysis and chi-squared model fitting on a new galactic center transient, including background contamination analysis</li>
-                <li> Designed custom pipeline using novel statistical methods to analyze 20+ years of XMM-Newton Observed point sources</li>
+                <li>Analyzed wavelet and Voronoi tessellation algorithms for use in galactic-center point-source localization of unstudied Chandra data</li>
+                <li>Conducted spectral analysis and chi-squared model fitting on a new galactic-center transient, including background-contamination analysis</li>
+                <li>Designed a custom pipeline using novel statistical methods to analyze 20+ years of XMM-Newton observed point sources</li>
               </ul>
               <div class="pills"><span class="pill">Python</span><span class="pill">Statistics</span><span class="pill">Data pipelines</span></div>
             </div>
@@ -373,141 +367,136 @@ communications, data storage and efficiency, and integration with all high and l
 
       <!-- ===== PROJECTS =====
            To add a project image: replace the <img> src with your file,
-           e.g. src="images/traction.png". Keep the class="card-img". -->
+           e.g. src="photos/traction.png". Keep class="card-img". -->
       <section id="sec-projects">
         <div class="proj-hd">
           <div>
             <div class="sec-kicker">03 · Projects</div>
             <div class="sec-title">Selected work</div>
           </div>
-          <div class="proj-hint">add an image to any card →</div>
         </div>
 
         <div class="grid">
 
           <div class="card">
-            <img class="card-img" alt="Drop Simulink / result plot" src="photos/tc.JPG">
+            <img class="card-img" alt="Traction control result plot" src="photos/tc.JPG">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">TRACTION CONTROL</span><span class="card-year">2024–25</span></div>
               <div class="card-title">Semi-Empirical Brush-Tire Traction Control</div>
               <ul class="card-desc">
-                <li>Single motor traction control uses open loop control based on vertical tire load and friction and close loop control based on slip error</li>
-                <li>Utilizes a forward speed kalman filter utilizing front wheel speeds and acceleration to estimate forward speed</li>
-                <li>Employs a Semi-Empirical Brush-based tire model that fits to real tire data, acts as lookup to translate input forces to ideal slip and estimation friction coefficient</li>
+                <li>Single-motor traction control uses open-loop control based on vertical tire load and friction, plus closed-loop control based on slip error</li>
+                <li>Uses a forward-speed Kalman filter with front wheel speeds and acceleration to estimate forward speed</li>
+                <li>Employs a semi-empirical brush tire model fit to real tire data, acting as a lookup to translate input forces to ideal slip and estimated friction coefficient</li>
               </ul>
-              <div class="card-tags"><span class="pill">MATLAB</span><span class="pill">Simulink</span><span class="pill">State Estimation</span><span class=""pill>Controls</span><span class=""pill>Data Analysis</span></div>
+              <div class="card-tags"><span class="pill">MATLAB</span><span class="pill">Simulink</span><span class="pill">State Estimation</span><span class="pill">Controls</span><span class="pill">Data Analysis</span></div>
               <div class="card-links"><a href="https://github.com/levinben3/Portfolio/tree/main/Traction%20Control">↗ Code [Simulink and MATLAB]</a><a href="https://docs.google.com/presentation/d/10g3fnFf-hpe5pNPlS50VfYqkygV6v_nj2HnW_AzFWOg/edit?usp=sharing">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop flowchart / diagram" src="photos/battery_soc.png">
+            <img class="card-img" alt="Battery state-of-charge estimation" src="photos/battery_soc.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">HIGH VOLTAGE</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Battery State of Charge and Health Estimation</div>
-              <ul class="card-desc">[ Kalman SOC estimator on a 2nd-order HPPC battery model with temperature mapping. ]
-                <li>Li-ion cell characterization using second order model fitting and high power pulse characterization testing</li>
-                <li>State of charge estimation implements second-order lumped element model in an extended kalman filter with dual parameter estimation for internal resistance and capacity estimates</li>
-                <li>Use in vehicle-level modeling and battery pack sizing with comparison to competition data and for pack-level MATLAB thermal modeling</li>
-                <li>Real-time application in battery management system with simplified operation for fast calculations</li>
+              <ul class="card-desc">
+                <li>Li-ion cell characterization using second-order model fitting and high-power pulse characterization testing</li>
+                <li>State-of-charge estimation implements a second-order lumped-element model in an extended Kalman filter with dual parameter estimation for internal resistance and capacity</li>
+                <li>Used in vehicle-level modeling and battery-pack sizing, with comparison to competition data and for pack-level MATLAB thermal modeling</li>
+                <li>Real-time application in the battery management system with simplified operation for fast calculations</li>
               </ul>
-              <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State machine</span><span class="pill">BMS</span></div>
-              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/blob/main/High_Voltage/Tractive_Battery/ADBMS6830/program/src/kalman_soc.c">↗ Code Implementation</a><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/Simulations/SOC  ">↗ Software-in-the-Loop Simulation</a><a href="https://github.com/levinben3/Portfolio/blob/main/High%20Voltage%20Systems/Kalman_Filter_SOC_hv.m">↗ MATLAB Implementation</a><a href="https://docs.google.com/presentation/d/1UwLNPxcx1PySDLa2pLYnUNMTH4au3tPNXkl1cbz87AM/edit?usp=sharing">↗ Writeup</a></div>
+              <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State Estimation</span><span class="pill">BMS</span></div>
+              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/blob/main/High_Voltage/Tractive_Battery/ADBMS6830/program/src/kalman_soc.c">↗ Code Implementation</a><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/Simulations/SOC">↗ SIL Simulation</a><a href="https://github.com/levinben3/Portfolio/blob/main/High%20Voltage%20Systems/Kalman_Filter_SOC_hv.m">↗ MATLAB Implementation</a><a href="https://docs.google.com/presentation/d/1UwLNPxcx1PySDLa2pLYnUNMTH4au3tPNXkl1cbz87AM/edit?usp=sharing">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop flowchart / diagram" src="photos/bms.png">
+            <img class="card-img" alt="Battery management system firmware" src="photos/bms.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">HIGH VOLTAGE</span><span class="card-year">FSAE</span></div>
               <div class="card-title">High Voltage Firmware and Battery Management System</div>
               <ul class="card-desc">
-                <li>Real-time operating system, task management, queues, buffers, mutexing</li>
-                <li>Various peripherals including CAN, ADCs, GPIO, SPI, I2C</li>
-                <li>State machines to control battery precharge, discharge, isolation relays, and ready-to-drive modes</li>
+                <li>Real-time operating system with task management, queues, buffers, and mutexing</li>
+                <li>Various peripherals including CAN, ADCs, GPIO, SPI, and I2C</li>
+                <li>State machines controlling battery precharge, discharge, isolation relays, and ready-to-drive modes</li>
                 <li>Battery management system data collection and fault checking</li>
               </ul>
-              <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State machine</span><span class="pill">BMS</span></div>
-              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/High_Voltage/Tractive_Battery">↗ Code</a>
+              <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">RTOS</span><span class="pill">BMS</span></div>
+              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/High_Voltage/Tractive_Battery">↗ Code</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop diagram / photo" src="photos/tssi.jpg">
+            <img class="card-img" alt="TSSI custom PCB" src="photos/tssi.jpg">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">LOW VOLTAGE</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Tractive System Status Indicator Light Custom PCB</div>
               <ul class="card-desc">
-                <li>Custom status indicator and ready-to-move light PCB designed to meet required minimum luminance</li>
-                <li>Transient protection and adjustable brightness along with small form factor to reduce drag and weight on vehcile</li>
-                <li>Conducted automotive grade testing on the light to meet competition and FMVSS standards</li>
+                <li>Custom status-indicator and ready-to-move light PCB designed to meet required minimum luminance</li>
+                <li>Transient protection and adjustable brightness in a small form factor to reduce drag and weight on the vehicle</li>
+                <li>Conducted automotive-grade testing on the light to meet competition and FMVSS standards</li>
               </ul>
-              <div class="card-tags"><span class="pill">Embedded</span><span class="pill">Controls</span><span class="pill">CAN</span></div>
-              <div class="card-links"><a href="/Electronics/tssi_rtm_sch.pdf">↗ Schematic</a><a href="/Electronics/tssi_rtm_pcb.pdf">↗ PCB</a></div>
+              <div class="card-tags"><span class="pill">PCB Design</span><span class="pill">Altium</span><span class="pill">Hardware</span></div>
+              <div class="card-links"><a href="photos/tssi_rtm_sch.pdf">↗ Schematic</a><a href="photos/tssi_rtm_pcb.pdf">↗ PCB</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop flowchart / diagram" src="photos/Electric-Power-Steering-System-Service-Feature.jpg">
+            <img class="card-img" alt="Electronic power steering model" src="photos/Electric-Power-Steering-System-Service-Feature.jpg">
             <div class="card-body">
-              <div class="card-top"><span class="card-kind">RIVIAN</span><span class="card-year">FSAE</span></div>
+              <div class="card-top"><span class="card-kind">RIVIAN</span><span class="card-year">2026</span></div>
               <div class="card-title">Electronic Power Steering Model and Simulation</div>
               <ul class="card-desc">
-                <li>Developed entire electronic power steering simulation and plant model for overall vehicle software-in-the-loop simulation, designed to interface with existing vehicle simulations</li>
-                <li>Designed model to support driver-in-the-loop allowing for interaction between "driver" and steering assist systems</li>
-                <li>Takes into account full effects of all compoenents of the system and cleanly models them for maximum efficiency</li>
-                <li>Allowed for the creation of >50 unique tests to validate lateral control systems on the vehicle in simulation</li>
+                <li>Developed the full electronic power steering simulation and plant model for vehicle-level software-in-the-loop simulation, designed to interface with existing vehicle simulations</li>
+                <li>Designed the model to support driver-in-the-loop, allowing interaction between the "driver" and steering-assist systems</li>
+                <li>Accounts for the full effects of all system components and models them cleanly for maximum efficiency</li>
+                <li>Enabled the creation of 50+ unique tests to validate lateral control systems in simulation</li>
               </ul>
-              <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State machine</span><span class="pill">BMS</span></div>
+              <div class="card-tags"><span class="pill">Simulink</span><span class="pill">Modeling</span><span class="pill">Controls</span></div>
               <div class="card-links"><a href="https://drive.google.com/file/d/1wG7YBvctiWYSx-EkzE8RxsZ3FI9oJeL9/view?usp=sharing">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop simulation plot" src="photos/lts.png">
+            <img class="card-img" alt="Lap-time simulation" src="photos/lts.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">SIMULATION</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Vehicle Simulations</div>
-              <ul class="card-desc">[ Point-mass, powertrain, and motor models to analyze endurance &amp; energy use. ]
-                <li>Developed point-mass lap-time simulations including time- and state-dependent battery simulations that fits a speed profile to competitions 
-                  tracks constrained by vehicle attributes such as tire-characteristics, load transfer, motor dynamics, and more; fits time profile for battery constraints. Allowed for 40% increase
-                  in battery pack capacity.</li>
-                <li>Designed full vehicle simulations utilizing simulink vehicle 3 degree-of-freedom models, custom empirical-brush-based tire model, and PMSM electric motor model to test real-time
-                  controls and spec vehicle designs such as drive ratio from motor to driven mechancial differential.
-                </li>
+              <ul class="card-desc">
+                <li>Developed point-mass lap-time simulations, including time- and state-dependent battery simulations, fitting a speed profile to competition tracks constrained by tire characteristics, load transfer, and motor dynamics — enabling a 40% increase in battery pack capacity</li>
+                <li>Designed full vehicle simulations using a Simulink 3-DOF vehicle model, a custom empirical-brush tire model, and a PMSM electric motor model to test real-time controls and spec vehicle designs such as drive ratio</li>
               </ul>
               <div class="card-tags"><span class="pill">MATLAB</span><span class="pill">Modeling</span><span class="pill">Optimization</span></div>
-              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/Simulations/Lap_Time_Simulation">↗ Lap Time Simulation Code</a><a href="https://github.com/levinben3/Portfolio/tree/main/Simulations">↗ Simulink Code</a><a href="https://docs.google.com/document/d/1JJ7vS6mSPJ8EMeujVn6JTzgn67IrhnmeCoGb-hXExuc/edit?usp=sharing">↗ Battery Justification Documentation</a></div>
+              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/Simulations/Lap_Time_Simulation">↗ Lap-Time Sim Code</a><a href="https://github.com/levinben3/Portfolio/tree/main/Simulations">↗ Simulink Code</a><a href="https://docs.google.com/document/d/1JJ7vS6mSPJ8EMeujVn6JTzgn67IrhnmeCoGb-hXExuc/edit?usp=sharing">↗ Battery Justification</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop data plot" src="photos/telemetry.png">
+            <img class="card-img" alt="Telemetry data processing" src="photos/telemetry.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">DATA ANALYSIS</span><span class="card-year">FSAE</span></div>
-              <div class="card-title">Data Acquisition and Telemetry; Data Processing</div>
-              <ul class="card-desc">[ MoTeC / i2 telemetry → noise, coast-down curves, mass &amp; moment estimates. ]
-                <li>Handles, configures, and organizes all data acqusition with MoTeC and i2 telemetry tools including management of full CAN bus system, analog, sensors and more, touching over 300 unique signals.</li>
-                <li>Analyzes results of data including coast-down analysis and curve fitting for vehicle transfer function modeling and motor control tuning.</li>
-                <li>Uses real data for testing software compoenents in the loop for better accuracy during real-time-testing.</li>
+              <div class="card-title">Data Acquisition, Telemetry &amp; Processing</div>
+              <ul class="card-desc">
+                <li>Configures and organizes all data acquisition with MoTeC and i2 telemetry tools, including management of the full CAN bus system, analog, and sensors — touching over 300 unique signals</li>
+                <li>Analyzes results including coast-down analysis and curve fitting for vehicle transfer-function modeling and motor-control tuning</li>
+                <li>Uses real data for testing software components in the loop for better accuracy during real-time testing</li>
               </ul>
-              <div class="card-tags"><span class="pill">Python</span><span class="pill">Signal proc.</span><span class="pill">MoTeC</span></div>
+              <div class="card-tags"><span class="pill">Python</span><span class="pill">Signal Proc.</span><span class="pill">MoTeC</span></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop spectrum / figure" src="photos/xmm.png">
+            <img class="card-img" alt="XMM-Newton source grouping" src="photos/xmm.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">ASTROPHYSICS</span><span class="card-year">Research</span></div>
               <div class="card-title">XMM-Newton Galactic Center Point Source Statistical Grouping</div>
               <ul class="card-desc">
-                <li>Constructed novel X-ray point source grouping pipeline for high energy galactic center sources with few photon counts</li>
-                <li>Pipeline employs custom k-means clustering algorithms, contour mapping, sigma clipping, and luminosity and flux constraints.</li>
-                <li>Employs novel energy quanta-based approach to avoid the photon count limitations of hardness ratio.</li>
-                <li>Took ~30,000 sources and grouped into &lt;800 groups for far easier analysis with custom spectral stacking pipeline.</li>
+                <li>Constructed a novel X-ray point-source grouping pipeline for high-energy galactic-center sources with few photon counts</li>
+                <li>Pipeline employs custom k-means clustering, contour mapping, sigma clipping, and luminosity and flux constraints</li>
+                <li>Uses a novel energy-quanta-based approach to avoid the photon-count limitations of hardness ratio</li>
+                <li>Grouped ~30,000 sources into &lt;800 groups for far easier analysis with a custom spectral-stacking pipeline</li>
               </ul>
               <div class="card-tags"><span class="pill">Python</span><span class="pill">Clustering</span><span class="pill">XMM-Newton</span></div>
-              <div class="card-links"><a href="/Code/XMM Stacking/">↗ Code</a><a href="https://docs.google.com/presentation/d/1hv7fhzzeibjXxiZe797-1Alj8Y0KI4UH04YoG00YOzA/edit?usp=sharing">↗ Presentation</a></div>
+              <div class="card-links"><a href="https://github.com/levinben3/Portfolio/tree/main/XMM%20Stacking">↗ Code</a><a href="https://docs.google.com/presentation/d/1hv7fhzzeibjXxiZe797-1Alj8Y0KI4UH04YoG00YOzA/edit?usp=sharing">↗ Presentation</a></div>
             </div>
           </div>
 
@@ -526,21 +515,21 @@ communications, data storage and efficiency, and integration with all high and l
               <div class="pub-title">A multiwavelength study of the Galactic center black hole candidate MAXI J1744-294</div>
               <div class="pub-meta">Mandel et al. · arXiv preprint</div>
             </div>
-            <div class="pub-link"><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae77f5 "> Publication ↗</a></div>
+            <div class="pub-link"><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae77f5">Publication ↗</a></div>
           </div>
           <div class="pub">
             <div class="pub-year">2026</div>
             <div class="pub-body">
               <div class="pub-title">XRISM Spectroscopy of a Crowded Galactic Center Region. II. Narrow Emission Lines in the Black Hole Candidate MAXI J1744-294/Swift J174540.2-290037</div>
-              <div class="pub-meta">Parra et al. · The Astrophysics Journal</div>
+              <div class="pub-meta">Parra et al. · The Astrophysical Journal</div>
             </div>
-            <div class="pub-link"><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae77f5 ">Publication ↗</a></div>
+            <div class="pub-link"><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae77f5">Publication ↗</a></div>
           </div>
           <div class="pub">
             <div class="pub-year">2026</div>
             <div class="pub-body">
               <div class="pub-title">XRISM Spectroscopy of a Crowded Galactic Center Region. I. Disentangling the Sources in the Field of View</div>
-              <div class="pub-meta">Parra et al. · The Astrophysics Journal</div>
+              <div class="pub-meta">Parra et al. · The Astrophysical Journal</div>
             </div>
             <div class="pub-link"><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae77de">Publication ↗</a></div>
           </div>
@@ -548,9 +537,9 @@ communications, data storage and efficiency, and integration with all high and l
             <div class="pub-year">2026</div>
             <div class="pub-body">
               <div class="pub-title">X-ray-luminous late-type giants: An overlooked population contributing to the Galactic ridge iron line emission</div>
-              <div class="pub-meta">T.  Bao, B. Levin et al. · Astronomy & Astrophysics</div>
+              <div class="pub-meta">T. Bao, B. Levin et al. · Astronomy &amp; Astrophysics</div>
             </div>
-            <div class="pub-link"><a href="https://doi.org/10.1051/0004-6361/202660001">	Publication ↗</a></div>
+            <div class="pub-link"><a href="https://doi.org/10.1051/0004-6361/202660001">Publication ↗</a></div>
           </div>
           <div class="pub">
             <div class="pub-year">2025</div>
@@ -558,7 +547,7 @@ communications, data storage and efficiency, and integration with all high and l
               <div class="pub-title">Chandra position of the new Galactic center transient MAXI J1744-294</div>
               <div class="pub-meta">S. Mandel, B. Levin et al. · Astronomer's Telegram</div>
             </div>
-            <div class="pub-link"><a href="https://www.astronomerstelegram.org/?read=17087">	Publication ↗</a></div>
+            <div class="pub-link"><a href="https://www.astronomerstelegram.org/?read=17087">Publication ↗</a></div>
           </div>
         </div>
       </section>
@@ -567,7 +556,7 @@ communications, data storage and efficiency, and integration with all high and l
         <div class="c">© 2026 Benjamin Levin · Built with HTML &amp; a soldering iron</div>
         <div class="fl">
           <a href="https://github.com/levinben3">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/benjamin-levin-591516325/"> ↗</a>
+          <a href="https://www.linkedin.com/in/benjamin-levin-591516325/">LinkedIn ↗</a>
           <a href="#sec-about">top ↑</a>
         </div>
       </footer>
