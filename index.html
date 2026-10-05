@@ -253,7 +253,7 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
         <p class="hero-p">Undergraduate physics student working at the intersection of theory, software, and hardware — state estimation, embedded firmware, and vehicle modeling.</p>
         <div class="role-row">
           <div class="role"><div class="k">CURRENTLY</div><div class="t">Systems Arch. &amp; Controls Intern</div><div class="o">Rivian · VW Group Tech</div></div>
-          <div class="role"><div class="k">LEAD</div><div class="t">Software &amp; Low-Voltage Lead</div><div class="o">Formula SAE Electric</div></div>
+          <div class="role"><div class="k">LEAD</div><div class="t">Software Lead &amp; Low-Voltage Chief</div><div class="o">Formula SAE Electric</div></div>
           <div class="role"><div class="k">RESEARCH</div><div class="t">High-Energy Astrophysics</div><div class="o">University Lab</div></div>
         </div>
 
@@ -281,8 +281,12 @@ ul.card-desc li::before{content:'›';position:absolute;left:0;color:var(--accen
         <div class="sec-title">A short version</div>
         <div class="two-col">
           <div class="col-text">
-            <p>Hi, I am an undergraduate student at Columbia University in the City of New York. As a physics major, I am both passionate about using my physics backround toward applied software engineering projects, including controls, firmware, hardware development, simulation, data analysis, and the most cutting-edge projects in different disciplines, such as high energy astrophysics.</p>
-            <p>Currently, I am working on the complete low voltage system for the Formual SAE electric vehicle I work on, bringing together all low voltage electronics, data acqusition, wiring harness, and all software components of the car. I am working on developing robust embedded real-time operating systems to handle battery management systems and sensor management. I am also extending our understanding of batteries through advanced higher order modeling, incorporating thermal analysis and developing vehicle-dynamics-based control and state estimation.</p>
+            <p>Hi, I am an undergraduate student at Columbia University in the City of New York. As a physics major, I am both passionate about using my physics backround toward applied software engineering projects, including controls, firmware, hardware 
+              development, simulation, data analysis, and the most cutting-edge projects in different disciplines, such as high energy astrophysics.</p>
+            <p>Currently, I am working on the complete low voltage system for the Formual SAE electric vehicle I work on, bringing together all low voltage 
+              electronics, data acqusition, wiring harness, and all software components of the car. I am working on developing robust embedded real-time operating systems to handle battery management systems and sensor management. 
+              I am also extending our understanding of batteries through advanced higher order modeling, incorporating thermal analysis and developing vehicle-dynamics-based control and state estimation.</p>
+            <p>On the side, I am an avid classical double bass player and amateur conductor in a wide variety of school and student-led ensembles. I also am a frequent cook, preparing elaborate dinners and creative dishes for my friends.</p>
           </div>
           <div class="toolbox">
             <div class="toolbox-h">TOOLBOX</div>
@@ -382,7 +386,7 @@ communications, data storage and efficiency, and integration with all high and l
         <div class="grid">
 
           <div class="card">
-            <img class="card-img" alt="Drop Simulink / result plot" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop Simulink / result plot%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop Simulink / result plot" src="photos/tc.JPG">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">TRACTION CONTROL</span><span class="card-year">2024–25</span></div>
               <div class="card-title">Semi-Empirical Brush-Tire Traction Control</div>
@@ -392,87 +396,118 @@ communications, data storage and efficiency, and integration with all high and l
                 <li>Employs a Semi-Empirical Brush-based tire model that fits to real tire data, acts as lookup to translate input forces to ideal slip and estimation friction coefficient</li>
               </ul>
               <div class="card-tags"><span class="pill">MATLAB</span><span class="pill">Simulink</span><span class="pill">State Estimation</span><span class=""pill>Controls</span><span class=""pill>Data Analysis</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
+              <div class="card-links"><a href="https://github.com/levinben3/Portfolio/tree/main/Traction%20Control">↗ Code [Simulink and MATLAB]</a><a href="https://docs.google.com/presentation/d/10g3fnFf-hpe5pNPlS50VfYqkygV6v_nj2HnW_AzFWOg/edit?usp=sharing">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop flowchart / diagram" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop flowchart / diagram%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop flowchart / diagram" src="photos/battery_soc.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">HIGH VOLTAGE</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Battery State of Charge and Health Estimation</div>
-              <p class="card-desc">[ Kalman SOC estimator on a 2nd-order HPPC battery model with temperature mapping. ]</p>
+              <ul class="card-desc">[ Kalman SOC estimator on a 2nd-order HPPC battery model with temperature mapping. ]
+                <li>Li-ion cell characterization using second order model fitting and high power pulse characterization testing</li>
+                <li>State of charge estimation implements second-order lumped element model in an extended kalman filter with dual parameter estimation for internal resistance and capacity estimates</li>
+                <li>Use in vehicle-level modeling and battery pack sizing with comparison to competition data and for pack-level MATLAB thermal modeling</li>
+                <li>Real-time application in battery management system with simplified operation for fast calculations</li>
+              </ul>
               <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State machine</span><span class="pill">BMS</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
+              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/blob/main/High_Voltage/Tractive_Battery/ADBMS6830/program/src/kalman_soc.c">↗ Code Implementation</a><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/Simulations/SOC  ">↗ Software-in-the-Loop Simulation</a><a href="https://github.com/levinben3/Portfolio/blob/main/High%20Voltage%20Systems/Kalman_Filter_SOC_hv.m">↗ MATLAB Implementation</a><a href="https://docs.google.com/presentation/d/1UwLNPxcx1PySDLa2pLYnUNMTH4au3tPNXkl1cbz87AM/edit?usp=sharing">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop flowchart / diagram" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop flowchart / diagram%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop flowchart / diagram" src="photos/bms.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">HIGH VOLTAGE</span><span class="card-year">FSAE</span></div>
               <div class="card-title">High Voltage Firmware and Battery Management System</div>
-              <p class="card-desc">[ Kalman SOC estimator on a 2nd-order HPPC battery model with temperature mapping. ]</p>
+              <ul class="card-desc">
+                <li>Real-time operating system, task management, queues, buffers, mutexing</li>
+                <li>Various peripherals including CAN, ADCs, GPIO, SPI, I2C</li>
+                <li>State machines to control battery precharge, discharge, isolation relays, and ready-to-drive modes</li>
+                <li>Battery management system data collection and fault checking</li>
+              </ul>
               <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State machine</span><span class="pill">BMS</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
+              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/High_Voltage/Tractive_Battery">↗ Code</a>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop diagram / photo" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop diagram / photo%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop diagram / photo" src="photos/tssi.jpg">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">LOW VOLTAGE</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Tractive System Status Indicator Light Custom PCB</div>
-              <p class="card-desc">[ High-level LV code: controls, sensors, and the vehicle state machine. ]</p>
+              <ul class="card-desc">
+                <li>Custom status indicator and ready-to-move light PCB designed to meet required minimum luminance</li>
+                <li>Transient protection and adjustable brightness along with small form factor to reduce drag and weight on vehcile</li>
+                <li>Conducted automotive grade testing on the light to meet competition and FMVSS standards</li>
+              </ul>
               <div class="card-tags"><span class="pill">Embedded</span><span class="pill">Controls</span><span class="pill">CAN</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
+              <div class="card-links"><a href="/Electronics/tssi_rtm_sch.pdf">↗ Schematic</a><a href="/Electronics/tssi_rtm_pcb.pdf">↗ PCB</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop flowchart / diagram" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop flowchart / diagram%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop flowchart / diagram" src="photos/Electric-Power-Steering-System-Service-Feature.jpg">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">RIVIAN</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Electronic Power Steering Model and Simulation</div>
-              <p class="card-desc">[ Kalman SOC estimator on a 2nd-order HPPC battery model with temperature mapping. ]</p>
+              <ul class="card-desc">
+                <li>Developed entire electronic power steering simulation and plant model for overall vehicle software-in-the-loop simulation, designed to interface with existing vehicle simulations</li>
+                <li>Designed model to support driver-in-the-loop allowing for interaction between "driver" and steering assist systems</li>
+                <li>Takes into account full effects of all compoenents of the system and cleanly models them for maximum efficiency</li>
+                <li>Allowed for the creation of >50 unique tests to validate lateral control systems on the vehicle in simulation</li>
+              </ul>
               <div class="card-tags"><span class="pill">Embedded C</span><span class="pill">State machine</span><span class="pill">BMS</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
+              <div class="card-links"><a href="https://drive.google.com/file/d/1wG7YBvctiWYSx-EkzE8RxsZ3FI9oJeL9/view?usp=sharing">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop simulation plot" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop simulation plot%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop simulation plot" src="photos/lts.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">SIMULATION</span><span class="card-year">FSAE</span></div>
               <div class="card-title">Vehicle Simulations</div>
-              <p class="card-desc">[ Point-mass, powertrain, and motor models to analyze endurance &amp; energy use. ]</p>
+              <ul class="card-desc">[ Point-mass, powertrain, and motor models to analyze endurance &amp; energy use. ]
+                <li>Developed point-mass lap-time simulations including time- and state-dependent battery simulations that fits a speed profile to competitions 
+                  tracks constrained by vehicle attributes such as tire-characteristics, load transfer, motor dynamics, and more; fits time profile for battery constraints. Allowed for 40% increase
+                  in battery pack capacity.</li>
+                <li>Designed full vehicle simulations utilizing simulink vehicle 3 degree-of-freedom models, custom empirical-brush-based tire model, and PMSM electric motor model to test real-time
+                  controls and spec vehicle designs such as drive ratio from motor to driven mechancial differential.
+                </li>
+              </ul>
               <div class="card-tags"><span class="pill">MATLAB</span><span class="pill">Modeling</span><span class="pill">Optimization</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
+              <div class="card-links"><a href="https://github.com/columbia-fsae/EV27-Software/tree/main/Simulations/Lap_Time_Simulation">↗ Lap Time Simulation Code</a><a href="https://github.com/levinben3/Portfolio/tree/main/Simulations">↗ Simulink Code</a><a href="https://docs.google.com/document/d/1JJ7vS6mSPJ8EMeujVn6JTzgn67IrhnmeCoGb-hXExuc/edit?usp=sharing">↗ Battery Justification Documentation</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop data plot" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop data plot%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop data plot" src="photos/telemetry.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">DATA ANALYSIS</span><span class="card-year">FSAE</span></div>
-              <div class="card-title">Telemetry processing</div>
-              <p class="card-desc">[ MoTeC / i2 telemetry → noise, coast-down curves, mass &amp; moment estimates. ]</p>
+              <div class="card-title">Data Acquisition and Telemetry; Data Processing</div>
+              <ul class="card-desc">[ MoTeC / i2 telemetry → noise, coast-down curves, mass &amp; moment estimates. ]
+                <li>Handles, configures, and organizes all data acqusition with MoTeC and i2 telemetry tools including management of full CAN bus system, analog, sensors and more, touching over 300 unique signals.</li>
+                <li>Analyzes results of data including coast-down analysis and curve fitting for vehicle transfer function modeling and motor control tuning.</li>
+                <li>Uses real data for testing software compoenents in the loop for better accuracy during real-time-testing.</li>
+              </ul>
               <div class="card-tags"><span class="pill">Python</span><span class="pill">Signal proc.</span><span class="pill">MoTeC</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Writeup</a></div>
             </div>
           </div>
 
           <div class="card">
-            <img class="card-img" alt="Drop spectrum / figure" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='158'%3E%3Crect width='400' height='158' fill='%23eef1f4'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa6b0' font-family='monospace' font-size='11' text-anchor='middle' dominant-baseline='middle'%3EDrop spectrum / figure%3C/text%3E%3C/svg%3E">
+            <img class="card-img" alt="Drop spectrum / figure" src="photos/xmm.png">
             <div class="card-body">
               <div class="card-top"><span class="card-kind">ASTROPHYSICS</span><span class="card-year">Research</span></div>
               <div class="card-title">XMM-Newton Galactic Center Point Source Statistical Grouping</div>
               <ul class="card-desc">
-                <li>Constructed novel X-ray point source grouping pipeline for source with little data</li>
-                <li>Uses custom k-means clustering algorithms, contour mapping, sigma clipping, and parameter constraints to allow complete analysis of ∼17000 sources</li>
+                <li>Constructed novel X-ray point source grouping pipeline for high energy galactic center sources with few photon counts</li>
+                <li>Pipeline employs custom k-means clustering algorithms, contour mapping, sigma clipping, and luminosity and flux constraints.</li>
+                <li>Employs novel energy quanta-based approach to avoid the photon count limitations of hardness ratio.</li>
+                <li>Took ~30,000 sources and grouped into &lt;800 groups for far easier analysis with custom spectral stacking pipeline.</li>
               </ul>
               <div class="card-tags"><span class="pill">Python</span><span class="pill">Clustering</span><span class="pill">XMM-Newton</span></div>
-              <div class="card-links"><a href="#">↗ Code</a><a href="#">↗ Paper</a></div>
+              <div class="card-links"><a href="/Code/XMM Stacking/">↗ Code</a><a href="https://docs.google.com/presentation/d/1hv7fhzzeibjXxiZe797-1Alj8Y0KI4UH04YoG00YOzA/edit?usp=sharing">↗ Presentation</a></div>
             </div>
           </div>
 
